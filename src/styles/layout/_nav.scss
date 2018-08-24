@@ -1,0 +1,29 @@
+.nav {
+    background-color: #ededed;
+
+    @include phones() {
+        display: none;
+    }
+
+    .nav__container {
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .nav__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .item__link {
+        text-decoration: none;
+        color: black;
+        transition: .3s;
+
+        &:hover {
+            color: #ff6212;
+        }
+    }
+}

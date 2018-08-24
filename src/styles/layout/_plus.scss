@@ -1,0 +1,67 @@
+.plus {
+
+    .plus__container {
+        padding: 100px 0;
+
+        @include phones() {
+            padding: 50px 10px;
+        }
+    }
+
+    .plus__title {
+        font-size: 50px;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 70px;
+        margin-top: 0;
+
+        @include phones() {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .plus__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .plus__item {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+
+            @include phones() {
+                width: 100%;
+                margin-bottom: 30px;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .item__img {
+            max-width: 90px;
+            margin-bottom: 25px;
+        }
+
+        .item__title {
+            font-size: 20px;
+            color: #333333;
+            margin: 0 0 15px 0;
+            max-width: 195px;
+
+            @include phones() {
+                max-width: 100%;
+            }
+        }
+
+        .item__text {
+            color: #333333;
+        }
+    }
+}

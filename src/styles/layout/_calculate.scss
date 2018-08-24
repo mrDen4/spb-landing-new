@@ -1,0 +1,65 @@
+.calculate {
+
+    .calculate__container {
+        padding: 100px 0;
+
+        @include phones() {
+            padding: 50px 10px;
+        }
+    }
+
+    .calculate__title {
+        color: #333333;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0 0 40px 0;
+
+        @include phones() {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .calculate__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .form__inp {
+            width: 18%;
+            height: 49px;
+            border-radius: 4px;
+            background-color: #ffffff;
+            padding: 10px 15px;
+            border: 1px solid #eeddee;
+
+            @include phones() {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .form__btn {
+            width: 30%;
+            height: 50px;
+            border-radius: 4px;
+            border: 2px solid #ff6212;
+            background-color: #ff6212;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            transition: .3s;
+            margin-top: 30px;
+
+            @include phones() {
+                width: 100%;
+            }
+
+            &:hover {
+                color: #ff6212;
+                background: none;
+            }
+        }
+    }
+}

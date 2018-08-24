@@ -1,0 +1,54 @@
+.profit {
+
+    .profit__container {
+        padding: 50px 0;
+
+        @include phones() {
+            padding: 50px 10px;
+        }
+    }
+
+    .profit__title {
+        font-size: 50px;
+        color: #333333;
+        font-weight: 700;
+        margin-bottom: 60px;
+
+        @include phones() {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    .profit__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include phones() {
+            flex-direction: column;
+        }
+
+        .profit__item {
+            width: 30%;
+
+            @include phones() {
+                width: 100%;
+            }
+        }
+
+        .item__subtitle {
+            color: #ff6212;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .item__text {
+            font-size: 20px;
+            color: #333333;
+            margin: 0;
+        }
+    }
+}
