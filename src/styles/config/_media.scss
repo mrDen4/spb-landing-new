@@ -9,6 +9,12 @@
       @content;
     }
   }
+
+  @mixin horizon {
+    @media screen and (max-width: $horizon) {
+      @content;
+    }
+  }
   
   @mixin phones {
     @media screen and (max-width: $phones) {

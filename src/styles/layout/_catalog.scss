@@ -2,6 +2,10 @@
 
     .catalog__container {
 
+        @include tablets() {
+            padding: 0 15px;
+        }
+
         @include phones() {
             padding: 0 10px;
         }
@@ -13,7 +17,7 @@
         font-weight: 700;
         margin-bottom: 30px;
 
-        @include phones() {
+        @include horizon() {
             font-size: 30px;
         }
     }
@@ -44,7 +48,7 @@
         border-radius: 4px;
         padding: 50px 60px;
 
-        @include phones() {
+        @include horizon() {
             flex-direction: column;
             padding: 15px 20px;
             align-items: center;
@@ -67,6 +71,10 @@
             @include phones() {
                 flex-direction: column;
             }
+
+            @include tablets() {
+                flex-direction: column;
+            }
         }
 
         .top__title {
@@ -78,6 +86,21 @@
             @include phones() {
                 text-align: center;
                 margin: 0 0 10px 0;
+            }
+
+            @include tablets() {
+                text-align: center;
+                margin: 0 0 20px 0;
+            }
+        }
+
+        .info__img {
+            display: none;
+
+            @include horizon() {
+                display: inherit;
+                width: 60%;
+                margin-bottom: 20px;
             }
         }
         
@@ -106,7 +129,7 @@
             display: flex;
             margin-bottom: 40px;
 
-            @include phones() {
+            @include horizon() {
                 align-items: center;
                 width: 100%;
                 justify-content: center;
@@ -163,7 +186,7 @@
             flex-wrap: wrap;
             margin-bottom: 50px;
 
-            @include phones() {
+            @include horizon() {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -174,7 +197,12 @@
                 color: #333333;
                 margin-bottom: 25px;
 
-                @include phones() {
+                @include tablets() {
+                    margin-right: 20px;
+                    width: 40%;
+                }
+
+                @include horizon() {
                     width: 100%;
                 }
 
@@ -188,7 +216,7 @@
             display: flex;
             align-items: center;
 
-            @include phones() {
+            @include horizon() {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
@@ -221,6 +249,7 @@
 
                 @include phones() {
                     margin-top: 20px;
+                    width: 100%;
                 }
 
                 &:hover {
@@ -236,15 +265,18 @@
             justify-content: center;
             width: 40%;
             
-            @include phones() {
-                width: 100%;
-                margin-top: 20px;
+            @include horizon() {
+                display: none;
             }
 
             .img__img {
                 width: 50%;
 
                 @include phones() {
+                    width: 80%;
+                }
+
+                @include tablets() {
                     width: 80%;
                 }
             }

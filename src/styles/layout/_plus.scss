@@ -6,6 +6,10 @@
         @include phones() {
             padding: 50px 10px;
         }
+
+        @include tablets() {
+            padding: 50px 15px;
+        }
     }
 
     .plus__title {
@@ -15,7 +19,7 @@
         margin-bottom: 70px;
         margin-top: 0;
 
-        @include phones() {
+        @include horizon() {
             font-size: 30px;
             text-align: center;
         }

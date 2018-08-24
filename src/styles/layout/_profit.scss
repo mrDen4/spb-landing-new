@@ -3,6 +3,10 @@
     .profit__container {
         padding: 50px 0;
 
+        @include tablets() {
+            padding: 50px 15px;
+        }
+
         @include phones() {
             padding: 50px 10px;
         }
@@ -14,7 +18,7 @@
         font-weight: 700;
         margin-bottom: 60px;
 
-        @include phones() {
+        @include horizon() {
             font-size: 30px;
             margin-bottom: 20px;
             text-align: center;

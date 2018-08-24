@@ -11,6 +11,10 @@
             padding: 20px 10px;
             align-items: flex-start;
         }
+
+        @include tablets() {
+            padding: 20px 10px;
+        }
     }
 
     .header__left {
@@ -21,6 +25,10 @@
             margin-bottom: 20px;
             width: 100%;
             justify-content: space-between;
+        }
+
+        @include tablets() {
+            margin-right: 20px;
         }
     }
 
@@ -40,6 +48,14 @@
         @include phones() {
             width: 140px;
         }
+
+        @include tablets() {
+            margin-right: 20px;
+        }
+
+        @include horizon() {
+            width: 150px;
+        }
     }
 
     .adress__text {
@@ -55,6 +71,11 @@
         text-decoration: none;
         margin-right: 40px;
         transition: .3s;
+
+        @include tablets() {
+            margin-right: 20px;
+            font-size: 18px;
+        }
 
         @include phones() {
             font-size: 16px;
@@ -78,6 +99,10 @@
         transition: .3s;
 
         @include phones() {
+            width: 150px;
+        }
+
+        @include horizon() {
             width: 150px;
         }
 

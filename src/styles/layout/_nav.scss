@@ -5,6 +5,10 @@
         display: none;
     }
 
+    @include tablets() {
+        display: none;
+    }
+
     .nav__container {
         align-items: center;
         justify-content: center;
