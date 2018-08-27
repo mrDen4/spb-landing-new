@@ -1,0 +1,42 @@
+.complete {
+
+    .complete__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .complete__title {
+        color: #333333;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        width: 40%;
+    }
+
+    .complete__list {
+        display: flex;
+        width: 60%;
+
+        .complete__item {
+            margin-right: 20px;
+
+            .item__link {
+                color: #999999;
+                transition: .3s;
+
+                &:hover {
+                    color: #333333;                    
+                }
+
+                &--active {
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    .complete__img {
+        width: 860px;
+    }
+}

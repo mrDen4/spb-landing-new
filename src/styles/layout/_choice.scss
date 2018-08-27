@@ -1,0 +1,30 @@
+.choice {
+
+    .choice__container {
+        padding-bottom: 50px;
+    }
+
+    .choise__title {
+        height: 50px;
+        color: #333333;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .choise__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .choise__item {
+            width: 30%;
+
+            .item__title {
+                color: #ff6212;
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

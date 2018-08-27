@@ -1,0 +1,29 @@
+.quality {
+
+    .quality__container {
+
+    }
+
+    .quality__title {
+        color: #333333;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .quality__list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .quality__item {
+            width: 30%;
+            margin-bottom: 25px;
+            border: 10px solid #ededed;
+
+            .block__img {
+                width: 100%;
+            }
+        }
+    }
+}

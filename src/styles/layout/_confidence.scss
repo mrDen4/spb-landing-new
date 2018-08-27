@@ -1,0 +1,32 @@
+.confidence {
+
+    .confidence__container {
+        padding: 0 0 50px 0;
+    }
+
+    .confidence__title {
+        color: #333333;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .confidence__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .confidence__item {
+        width: 30%;
+    }
+
+    .item__title {
+        color: #333333;
+        font-size: 20px;
+
+        .title__color {
+            color: #ff6212;
+            font-size: 30px;
+        }
+    }
+}

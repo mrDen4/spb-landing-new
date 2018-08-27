@@ -635,3 +635,185 @@ ul {
         max-width: 100%; } }
   .plus .plus__list .item__text {
     color: #333333; }
+
+.confidence .confidence__container {
+  padding: 0 0 50px 0; }
+
+.confidence .confidence__title {
+  color: #333333;
+  font-size: 50px;
+  font-weight: 700; }
+
+.confidence .confidence__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.confidence .confidence__item {
+  width: 30%; }
+
+.confidence .item__title {
+  color: #333333;
+  font-size: 20px; }
+  .confidence .item__title .title__color {
+    color: #ff6212;
+    font-size: 30px; }
+
+.quality .quality__title {
+  color: #333333;
+  font-size: 50px;
+  font-weight: 700; }
+
+.quality .quality__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .quality .quality__list .quality__item {
+    width: 30%;
+    margin-bottom: 25px;
+    border: 10px solid #ededed; }
+    .quality .quality__list .quality__item .block__img {
+      width: 100%; }
+
+.choice .choice__container {
+  padding-bottom: 50px; }
+
+.choice .choise__title {
+  height: 50px;
+  color: #333333;
+  font-size: 50px;
+  font-weight: 700; }
+
+.choice .choise__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+  .choice .choise__list .choise__item {
+    width: 30%; }
+    .choice .choise__list .choise__item .item__title {
+      color: #ff6212;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 15px; }
+
+.complete .complete__container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.complete .complete__title {
+  color: #333333;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  width: 40%; }
+
+.complete .complete__list {
+  display: flex;
+  width: 60%; }
+  .complete .complete__list .complete__item {
+    margin-right: 20px; }
+    .complete .complete__list .complete__item .item__link {
+      color: #999999;
+      transition: .3s; }
+      .complete .complete__list .complete__item .item__link:hover {
+        color: #333333; }
+      .complete .complete__list .complete__item .item__link--active {
+        color: #333333; }
+
+.complete .complete__img {
+  width: 860px; }
+
+.another .another__container {
+  padding: 100px 0; }
+
+.another .another__title {
+  color: #333333;
+  font-size: 50px;
+  font-weight: 700; }
+
+.another .item__title {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 50px; }
+
+.another .another__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .another .another__list .another__item {
+    display: flex;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 45px 65px; }
+  .another .another__list .item__content {
+    width: 60%; }
+  .another .another__list .item__title {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0; }
+  .another .another__list .item__list {
+    color: #333333;
+    margin-bottom: 40px; }
+    .another .another__list .item__list .list__item {
+      margin-bottom: 25px; }
+      .another .another__list .item__list .list__item:last-child {
+        margin-bottom: 0; }
+  .another .another__list .item__buy {
+    display: flex;
+    align-items: center; }
+    .another .another__list .item__buy .buy__price {
+      color: #ff6212;
+      font-size: 30px;
+      font-weight: 700;
+      margin-right: 30px; }
+    .another .another__list .item__buy .buy__btn {
+      width: 219px;
+      height: 50px;
+      color: #ffffff;
+      font-size: 20px;
+      border-radius: 4px;
+      border: 2px solid #ff6212;
+      background-color: #ff6212;
+      cursor: pointer;
+      transition: .3s; }
+      .another .another__list .item__buy .buy__btn:hover {
+        color: #ff6212;
+        background: #ffffff; }
+
+.contacts .contacts__container {
+  flex-direction: row;
+  padding: 100px 0;
+  justify-content: space-between; }
+
+.contacts .contacts__content {
+  width: 40%;
+  display: flex;
+  flex-direction: column; }
+  .contacts .contacts__content .content__title {
+    color: #333333;
+    font-size: 50px;
+    font-weight: 700; }
+  .contacts .contacts__content .content__text {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .contacts .contacts__content .content__link {
+    text-decoration: none;
+    color: #333333;
+    transition: .3s; }
+    .contacts .contacts__content .content__link:hover {
+      color: #ff6212;
+      text-decoration: underline; }
+
+.contacts .contacts__map {
+  width: 55%;
+  height: 500px;
+  background: yellow; }
+
+.footer .footer__container {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0; }
