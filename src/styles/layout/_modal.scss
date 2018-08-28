@@ -1,0 +1,111 @@
+.modal__card, .modal__card-price {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    top: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    margin-left: -197px;
+    background-color: #ededed;
+    border-radius: 4px;
+    width: 395px;
+    height: 410px;
+    z-index: 1099;
+
+    @include horizon() {
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 5px;
+    }
+
+    .modal__exit {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 40px;
+        color: #ff6212;
+        background: none;
+        border: none;
+    }
+
+    .modal__title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 35px;
+
+        @include horizon() {
+            margin-bottom: 10px;
+        }
+
+        @include phones() {
+            margin-bottom: 30px;
+        }
+    }
+
+    .modal__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__inp {
+        margin-bottom: 20px;
+        height: 45px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #ffffff;
+        border: none;
+        padding: 17px;
+    }
+
+    .form__btn {
+        width: 219px;
+        min-height: 45px;
+        border: none;
+        border-radius: 4px;
+        background-color: #ff6212;
+        color: #ffffff;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            background: #ff5500;
+        }
+    }
+}
+
+.modal__card--active, .modal__card-price--active {
+    display: flex;
+}
+
+.bg__modal {
+    position: absolute;
+    width: 99999px;
+    height: 999999px;
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: .5;
+    display: none;
+
+    @include tablets() {
+        width: 100%;
+    }
+
+    @include phones() {
+        height: 100%;
+    }
+}
+
+.bg__modal--active {
+    display: inherit;
+}
