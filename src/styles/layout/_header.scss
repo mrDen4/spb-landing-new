@@ -78,6 +78,7 @@
         }
 
         @include phones() {
+            width: 60%;
             font-size: 16px;
             margin-right: 20px;
         }
@@ -98,12 +99,12 @@
         cursor: pointer;
         transition: .3s;
 
-        @include phones() {
+        @include horizon() {
             width: 150px;
         }
 
-        @include horizon() {
-            width: 150px;
+        @include phones() {
+            width: 40%;
         }
 
         &:hover {
