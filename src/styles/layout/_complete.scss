@@ -4,6 +4,14 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+
+        @include tablets() {
+            padding: 0 15px;
+        }
+
+        @include phones() {
+            padding: 0 10px;
+        }
     }
 
     .complete__title {
@@ -12,14 +20,28 @@
         font-weight: 700;
         margin-bottom: 50px;
         width: 40%;
+        
+        @include phones() {
+            width: 100%;
+            font-size: 30px;
+        }
     }
 
     .complete__list {
         display: flex;
         width: 60%;
 
+        @include phones() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
         .complete__item {
             margin-right: 20px;
+
+            @include phones() {
+                margin-right: 10px;
+            }
 
             .item__link {
                 color: #999999;
@@ -38,5 +60,9 @@
 
     .complete__img {
         width: 860px;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 }

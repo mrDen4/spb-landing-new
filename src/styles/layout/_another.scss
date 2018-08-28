@@ -2,12 +2,25 @@
 
     .another__container {
         padding: 100px 0;
+
+        @include tablets() {
+            padding: 100px 15px;
+        }
+
+        @include phones() {
+            padding: 100px 10px;
+        }
     }
 
     .another__title {
         color: #333333;
         font-size: 50px;
         font-weight: 700;
+
+        @include phones() {
+            font-size: 30px;
+            text-align: center;
+        }
     }
 
     .item__title {
@@ -27,10 +40,18 @@
             border-radius: 4px;
             margin-bottom: 30px;
             padding: 45px 65px;
+
+            @include phones() {
+                padding: 10px 25px;
+            }
         }
 
         .item__content {
             width: 60%;
+
+            @include phones() {
+                width: 100%;
+            }
         }
 
         .item__title {
@@ -38,11 +59,20 @@
             font-size: 30px;
             font-weight: 700;
             margin: 0 0 20px 0;
+
+            @include phones() {
+                text-align: center;
+                font-size: 24px;
+            }
         }
 
         .item__list {
             color: #333333;
             margin-bottom: 40px;
+
+            @include phones() {
+                margin-bottom: 0px;
+            }
 
             .list__item {
                 margin-bottom: 25px;
@@ -62,6 +92,10 @@
                 font-size: 30px;
                 font-weight: 700;
                 margin-right: 30px;
+
+                @include phones() {
+                    font-size: 24px;
+                }
             }
 
             .buy__btn {
@@ -75,9 +109,30 @@
                 cursor: pointer;
                 transition: .3s;
 
+                @include phones() {
+                    font-size: 16px;
+                }
+
                 &:hover {
                     color: #ff6212;
                     background: #ffffff;
+                }
+            }
+        }
+
+        .item__img {
+
+            &--active {
+                display: none;
+            }
+
+            @include phones() {
+                display: none;
+
+                &--active {
+                    display: inherit;
+                    width: 100%;
+                    margin-bottom: 20px;
                 }
             }
         }

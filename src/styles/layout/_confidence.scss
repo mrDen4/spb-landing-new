@@ -2,22 +2,42 @@
 
     .confidence__container {
         padding: 0 0 50px 0;
+
+        @include tablets() {
+            padding: 0 15px;
+        }
+
+        @include phones() {
+            padding: 50px 10px;
+        }
     }
 
     .confidence__title {
         color: #333333;
         font-size: 50px;
         font-weight: 700;
+
+        @include phones() {
+            font-size: 30px;
+        }
     }
 
     .confidence__list {
         display: flex;
         width: 100%;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .confidence__item {
         width: 30%;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .item__title {

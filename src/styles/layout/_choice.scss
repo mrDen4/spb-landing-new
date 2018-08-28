@@ -2,13 +2,24 @@
 
     .choice__container {
         padding-bottom: 50px;
+
+        @include tablets() {
+            padding: 0 15px;
+        }
+
+        @include phones() {
+            padding: 0 10px;
+        }
     }
 
     .choise__title {
-        height: 50px;
         color: #333333;
         font-size: 50px;
         font-weight: 700;
+
+        @include phones() {
+            font-size: 30px;
+        }
     }
 
     .choise__list {
@@ -16,8 +27,16 @@
         width: 100%;
         justify-content: space-between;
 
+        @include phones() {
+            flex-direction: column;
+        }
+
         .choise__item {
             width: 30%;
+
+            @include phones() {
+                width: 100%;
+            }
 
             .item__title {
                 color: #ff6212;
