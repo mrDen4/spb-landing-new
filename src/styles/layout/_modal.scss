@@ -76,6 +76,10 @@
         cursor: pointer;
         transition: .3s;
 
+        @include phones() {
+            width: 100%;
+        }
+
         &:hover {
             background: #ff5500;
         }

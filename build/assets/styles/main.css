@@ -972,8 +972,7 @@ ul {
 
 .contacts .contacts__map {
   width: 55%;
-  height: 500px;
-  background: yellow; }
+  height: 500px; }
   @media screen and (max-width: 678px) {
     .contacts .contacts__map {
       width: 100%; } }
@@ -1055,6 +1054,9 @@ ul {
     font-size: 20px;
     cursor: pointer;
     transition: .3s; }
+    @media screen and (max-width: 480px) {
+      .modal__card .form__btn, .modal__card-price .form__btn {
+        width: 100%; } }
     .modal__card .form__btn:hover, .modal__card-price .form__btn:hover {
       background: #ff5500; }
 
