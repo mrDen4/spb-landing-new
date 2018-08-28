@@ -25,15 +25,27 @@
     .footer__rp {
         display: flex;
         align-items: center;
+        text-decoration: none;
+        color: #000000;
+        transition: .3s;
+
+        &:hover {
+            .rp__text {
+                color: #ff6212;
+            }
+        }
 
         @include phones() {
             flex-direction: column;
             justify-content: center;
         }
-    }
 
-    .rp__text {
-        margin-right: 20px;
+        .rp__text {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #000000;
+            transition: .3s;
+        }
     }
 
     .rp__logo {

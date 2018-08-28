@@ -140,7 +140,7 @@ ul {
   .nav .nav__container {
     align-items: center;
     justify-content: center;
-    padding: 15px 0; }
+    padding: 15px 15px; }
   .nav .nav__list {
     display: flex;
     width: 100%;
@@ -181,11 +181,14 @@ ul {
   .hero .hero__btn {
     width: 218px;
     height: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     border: 2px solid #ff6212;
     background-color: #ff6212;
     color: white;
-    cursor: pointer;
     transition: .3s;
     margin-bottom: 100px;
     font-size: 20px; }
@@ -1011,14 +1014,21 @@ ul {
 
 .footer .footer__rp {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  transition: .3s; }
+  .footer .footer__rp:hover .rp__text {
+    color: #ff6212; }
   @media screen and (max-width: 480px) {
     .footer .footer__rp {
       flex-direction: column;
       justify-content: center; } }
-
-.footer .rp__text {
-  margin-right: 20px; }
+  .footer .footer__rp .rp__text {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    transition: .3s; }
 
 .footer .rp__logo {
   width: 150px; }
