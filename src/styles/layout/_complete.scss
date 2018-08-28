@@ -62,7 +62,7 @@
     }
 
     .complete__img {
-        width: 860px;
+        width: 100%;
 
         @include tablets() {
             width: 100%;

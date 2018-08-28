@@ -571,7 +571,7 @@ ul {
         flex-direction: column;
         align-items: center; } }
     .callback .callback__form .form__inp {
-      width: 250px;
+      width: 20%;
       height: 49px;
       border-radius: 4px;
       background-color: #ffffff;
@@ -586,7 +586,7 @@ ul {
           width: 100%;
           margin-bottom: 20px; } }
     .callback .callback__form .form__btn {
-      width: 250px;
+      width: 20%;
       height: 49px;
       border-radius: 4px;
       border: 1px solid #ff6212;
@@ -846,7 +846,7 @@ ul {
         color: #333333; }
 
 .complete .complete__img {
-  width: 860px; }
+  width: 100%; }
   @media screen and (max-width: 770px) {
     .complete .complete__img {
       width: 100%; } }
