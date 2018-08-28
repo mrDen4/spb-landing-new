@@ -6,6 +6,9 @@
 
         @include tablets() {
             padding: 50px 15px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         @include phones() {
@@ -17,6 +20,24 @@
     
     .footer__logo {
         margin-right: 20px;
+    }
+
+    .footer__rp {
+        display: flex;
+        align-items: center;
+
+        @include phones() {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .rp__text {
+        margin-right: 20px;
+    }
+
+    .rp__logo {
+        width: 150px;
     }
 
 
