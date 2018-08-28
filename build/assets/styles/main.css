@@ -679,6 +679,7 @@ ul {
         text-align: center; } }
   .plus .plus__list .item__img {
     max-width: 90px;
+    min-height: 85px;
     margin-bottom: 25px; }
   .plus .plus__list .item__title {
     font-size: 20px;
