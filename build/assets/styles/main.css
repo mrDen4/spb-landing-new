@@ -200,7 +200,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 770px) {
       .hero .hero__list {
         flex-direction: column;
         align-items: flex-start; } }
