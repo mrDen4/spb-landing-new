@@ -70,6 +70,14 @@
             align-items: flex-start;
         }
 
+        .hero__item {
+            width: 30%;
+
+            @include tablets() {
+                width: 100%;
+            }
+        }
+
         .item__text {
             color: white;
 

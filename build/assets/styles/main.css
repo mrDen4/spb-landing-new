@@ -208,6 +208,11 @@ ul {
       .hero .hero__list {
         flex-direction: column;
         align-items: flex-start; } }
+    .hero .hero__list .hero__item {
+      width: 30%; }
+      @media screen and (max-width: 770px) {
+        .hero .hero__list .hero__item {
+          width: 100%; } }
     .hero .hero__list .item__text {
       color: white; }
       .hero .hero__list .item__text .text__color {
