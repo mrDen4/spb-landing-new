@@ -17,8 +17,9 @@
         font-size: 50px;
         font-weight: 700;
 
-        @include phones() {
+        @include horizon() {
             font-size: 30px;
+            text-align: center;
         }
     }
 
@@ -27,14 +28,14 @@
         width: 100%;
         justify-content: space-between;
 
-        @include phones() {
+        @include horizon() {
             flex-direction: column;
         }
 
         .choise__item {
             width: 30%;
 
-            @include phones() {
+            @include horizon() {
                 width: 100%;
             }
 

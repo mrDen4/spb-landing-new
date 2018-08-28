@@ -21,9 +21,10 @@
         margin-bottom: 50px;
         width: 40%;
         
-        @include phones() {
+        @include horizon() {
             width: 100%;
             font-size: 30px;
+            text-align: center;
         }
     }
 
@@ -31,15 +32,16 @@
         display: flex;
         width: 60%;
 
-        @include phones() {
+        @include horizon() {
             width: 100%;
             margin-bottom: 30px;
+            justify-content: center;
         }
 
         .complete__item {
             margin-right: 20px;
 
-            @include phones() {
+            @include horizon() {
                 margin-right: 10px;
             }
 
@@ -61,7 +63,11 @@
     .complete__img {
         width: 860px;
 
-        @include phones() {
+        @include tablets() {
+            width: 100%;
+        }
+
+        @include horizon() {
             width: 100%;
         }
     }
