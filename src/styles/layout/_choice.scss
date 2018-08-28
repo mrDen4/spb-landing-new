@@ -1,7 +1,7 @@
 .choice {
 
     .choice__container {
-        padding-bottom: 50px;
+        padding: 0 15px 50px 15px;
 
         @include tablets() {
             padding: 0 15px;

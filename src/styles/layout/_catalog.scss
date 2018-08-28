@@ -1,7 +1,8 @@
 .catalog {
 
     .catalog__container {
-
+        padding: 0 15px;
+        
         @include tablets() {
             padding: 0 15px;
         }

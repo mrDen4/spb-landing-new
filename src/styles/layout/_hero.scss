@@ -4,7 +4,7 @@
     min-height: 645px;
 
     .hero__container {
-        padding: 50px 0;
+        padding: 50px 15px;
 
         @include tablets() {
             padding: 50px 15px;
